@@ -6,7 +6,7 @@
 /*   By: azkeever <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 14:15:07 by azkeever          #+#    #+#             */
-/*   Updated: 2019/09/09 14:15:12 by azkeever         ###   ########.fr       */
+/*   Updated: 2019/09/09 15:12:11 by azkeever         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	ft_checkline(char **str, char **line, int ret)
 	*line = ft_strsub(*str, 0, i);
 	tmp = ft_strdup(&((*str)[i + 1]));
 	free(*str);
+	ft_putendl("free string");
 	*str = ft_strdup(tmp);
 	if (ret == 0)
 	{
