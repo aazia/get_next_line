@@ -25,13 +25,13 @@ int	main(void)
 	gnl_ret = get_next_line(p[0], &line);	
 	if (gnl_ret != 1)
 		printf("er1\n");
-	if (strcmp(line, "abc\n") == 0)
-		printf("er1.1, line: %s\n", line);
+	if (strcmp(line, "abc") == 0)
+		printf("ok, %s\n", line);
 
 	/* Read new line */
 	gnl_ret = get_next_line(p[0], &line);
 	if (gnl_ret != 1)
-		printf("er");
+		printf("Error returning %i\n", gnl_ret);
 	if (line == NULL || *line == '\0')
 		printf("ok\n");
 
