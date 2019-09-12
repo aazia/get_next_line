@@ -6,7 +6,7 @@
 /*   By: azkeever <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/29 15:38:51 by azkeever          #+#    #+#             */
-/*   Updated: 2019/09/09 14:59:51 by azkeever         ###   ########.fr       */
+/*   Updated: 2019/09/12 10:59:59 by azkeever         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,5 @@ char	*ft_strdup(const char *s1)
 		}
 	else
 		return (NULL);
-	ft_putendl("malloc in ft_strdup");
 	return (str);
 }
